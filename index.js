@@ -17,7 +17,7 @@ const DB_URLO = process.env.DB_URLO;
   app.use(bodyParser.urlencoded({extended:true}))
  app.use('/', Router);
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD; 
